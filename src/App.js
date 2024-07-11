@@ -1,23 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header';
+import TaskList from './components/TaskList';
 function App() {
-  return (
+  //use state with integer
+  // const [count,setCount]=useState(0)
+  // function hadd(){
+  //   setCount(count => count+1);
+  //   setCount(count => count+1);
+
+  //   setCount(count => count+1);
+
+  // }
+
+  // function hsub(){
+  //   if(count ==0){
+  //     alert("count is already set to 0")
+  //   }
+  //   else{
+  //     setCount(count-1);
+  //   }
+    
+  // }
+
+  // function hreset(){
+  //   setCount(0)
+  // }
+  // return (
+  //   <div className="box">
+  //     <div className="control">
+  //       <p>{count}</p>
+  //       <button onClick={hadd} className="add">add</button>
+  //       <button onClick={hsub} className="sub">sub</button>
+  //       <button onClick={hreset} className="reset">reset</button>
+  //     </div>
+  //   </div>
+  // );
+
+  
+    return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <TaskList yohoho='1'/>
     </div>
   );
 }
